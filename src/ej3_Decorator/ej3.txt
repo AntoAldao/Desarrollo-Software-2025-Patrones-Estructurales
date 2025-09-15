@@ -1,0 +1,9 @@
+Ejercicio 3 – Decorator
+
+Una aplicación de streaming necesita calcular el costo de suscripción de un usuario:
+- Plan básico: $1000
+- Opcionalmente, puede agregar HD (+$500), UltraHD (+$1000), Descargas Offline (+$700).
+
+Consigna:
+- Usar el patrón Decorator para ir agregando dinámicamente características al plan básico.
+- Probar distintas combinaciones (ejemplo: Básico + HD + Descargas).

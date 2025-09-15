@@ -1,0 +1,8 @@
+Ejercicio 1 – Adapter
+
+Una empresa tiene un sistema que trabaja con una clase ImpresoraPDF que imprime documentos PDF.
+Ahora necesitan también imprimir en impresoras de texto plano, pero sin modificar el sistema existente.
+
+Consigna:
+- Crear una clase ImpresoraTexto (incompatible con la actual).
+- Usar el patrón Adapter para que el sistema pueda imprimir tanto en PDF como en texto plano a través de una misma interfaz Impresora.

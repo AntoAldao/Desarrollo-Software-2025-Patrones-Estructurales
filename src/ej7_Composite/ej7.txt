@@ -1,0 +1,10 @@
+Ejercicio 7 – Composite
+
+Un sistema gestiona elementos de un menú de restaurante:
+- Platos individuales (Plato)
+- Menús completos que agrupan varios platos (Menu)
+
+Consigna:
+- Crear una interfaz común ElementoMenu para platos y menús.
+- Implementar el patrón Composite para que se puedan manejar platos individuales y menús completos de la misma forma.
+- Probar en el main creando un menú que contenga varios platos y un submenú con otros platos, y mostrar todos los elementos de manera uniforme.

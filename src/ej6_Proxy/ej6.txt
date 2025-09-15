@@ -1,0 +1,8 @@
+Ejercicio 6 – Proxy
+
+Un sistema de acceso a archivos restringidos tiene la clase ArchivoReal, que abre y lee un archivo.
+Se quiere implementar control de acceso para que solo ciertos usuarios puedan abrirlos.
+
+Consigna:
+- Implementar un Proxy (ArchivoProxy) que controle el acceso según permisos de usuario.
+- Si el usuario no tiene permisos, mostrar un mensaje de acceso denegado.

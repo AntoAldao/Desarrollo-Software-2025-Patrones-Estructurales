@@ -1,0 +1,8 @@
+Ejercicio 2 – Bridge
+
+Un sistema de notificaciones debe enviar mensajes a los usuarios por distintos medios: Email y SMS.
+La notificación puede ser de distintos tipos: Alerta, Recordatorio, Promoción.
+
+Consigna:
+- Separar las abstracciones (tipos de notificación) de las implementaciones (canales de envío).
+- Usar el patrón Bridge para que las notificaciones puedan enviarse por cualquier canal.

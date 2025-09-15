@@ -1,0 +1,9 @@
+Ejercicio 5 – Flyweight
+
+Se está desarrollando un juego donde aparecen miles de árboles en el mapa.
+Cada árbol tiene propiedades intrínsecas (tipo de árbol, textura, color) y extrínsecas (posición X,Y en el mapa).
+
+Consigna:
+- Implementar el patrón Flyweight para optimizar el uso de memoria.
+- Crear una FabricaDeArboles que reutilice los objetos compartidos.
+- Simular la creación de 1 millón de árboles con pocos tipos de árbol.
