@@ -1,4 +1,4 @@
-package Adapter;
+package ej1_Adapter;
 
 public class ImpresoraTextoAdapter implements Impresora {
     private final ImpresoraTexto impresoraTexto;

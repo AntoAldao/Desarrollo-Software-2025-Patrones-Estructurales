@@ -1,9 +1,9 @@
-import Adapter.*;
+package ej1_Adapter;
 
-public class Main {
+import ej1_Adapter.*;
+
+public class MainAdapter {
     public static void main(String[] args) {
-
-
         System.out.println("---------- Ejercicio1 - Sistema de Impresión con Adaptador -----------\n");
 
         ImpresoraPDF impresoraPDF = new ImpresoraPDF();

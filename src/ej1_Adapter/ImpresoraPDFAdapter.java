@@ -1,4 +1,4 @@
-package Adapter;
+package ej1_Adapter;
 
 public class ImpresoraPDFAdapter implements Impresora {
     private final ImpresoraPDF impresoraPDF;

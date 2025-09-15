@@ -1,4 +1,4 @@
-package Adapter;
+package ej1_Adapter;
 
 public class ImpresoraPDF {
     public void imprimirPDF(String contenido) {

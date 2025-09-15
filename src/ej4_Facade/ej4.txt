@@ -1,0 +1,10 @@
+Ejercicio 4 – Facade
+
+Una tienda online tiene un proceso de compra que involucra varias clases:
+- Carrito (gestiona productos)
+- Pago (procesa el pago)
+- Envio (coordina la entrega)
+
+Consigna:
+- Implementar un Facade (TiendaFacade) que simplifique todo el proceso en un solo método comprar().
+- Probar la compra de un producto desde el main usando solamente el Facade.
