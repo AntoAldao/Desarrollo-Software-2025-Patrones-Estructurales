@@ -1,4 +1,4 @@
-package Adapter;
+package ej1_Adapter;
 
 public class ImpresoraTexto {
     public void imprimirTexto(String linea) {
