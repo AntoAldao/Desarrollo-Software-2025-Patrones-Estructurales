@@ -14,19 +14,27 @@ public class TiendaFacade {
         this.pago = new Pago();
     }
 
+    /* el facade expone la funcionalidad de agregar productos pero oculta el
+    subsitema carrito */
+    public void agregarProdcutoAlCarrito(Producto producto){
+        this.carrito.setProductos(producto);
+    }
+
     /*metodo que usara el cliente que aplica las llamadas a los distintos
     sistemas en el orden del proceso de compra*/
-    public void comprar(List<Producto> productos, String direccion, String metodoPago){
+    public void comprar(String direccion, String metodoPago){
+        System.out.println("\n------------------------------");
         System.out.println("Iniciando proceso de compra");
         System.out.println("------------------------------");
 
-        //1. agrega productos al carrito
-        for (Producto p: productos){
-            this.carrito.setProductos(p);
+        //el Facade ya tiene los productos en su instancia de carrito
+        float montoTotal = this.carrito.getPrecioTotal();
+        if (montoTotal<=0){
+            System.out.println("El carrit esta vacio no se puede continuar el proceso de compra");
+            return;
         }
 
-        //2. preocesa el pago
-        float montoTotal = carrito.getPrecioTotal();
+        //2. procesa el pago
         boolean pagoExitoso = this.pago.procesarPago(montoTotal, metodoPago);
 
         //3. si el pago es exitoso programa el envio
