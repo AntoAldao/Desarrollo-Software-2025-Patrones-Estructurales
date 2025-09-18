@@ -8,7 +8,7 @@ public class MainAdapter {
     }
 
     public static void main(String[] args) {
-        // Usando la impresora PDF directamente (no necesita adapter)
+        // Usando la impresora PDF directamente
         Impresora impresoraPDF = new ImpresoraPDF();
         imprimirDocumento(impresoraPDF, "Contrato en formato PDF");
 
