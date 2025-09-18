@@ -1,7 +1,7 @@
 package ej1_Adapter;
 
-public class ImpresoraPDF {
-    public void imprimirPDF(String contenido) {
+public class ImpresoraPDF implements Impresora{
+    public void imprimir (String contenido) {
        //simulacion de la impresion del pdf
         System.out.println("[PDF] Generando documento PDF...");
         System.out.println("[PDF] Contenido: " + contenido);
