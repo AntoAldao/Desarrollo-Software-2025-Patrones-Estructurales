@@ -3,24 +3,19 @@ package ej1_Adapter;
 import ej1_Adapter.*;
 
 public class MainAdapter {
-    public static void main(String[] args) {
-        System.out.println("---------- Ejercicio1 - Sistema de Impresión con Adaptador -----------\n");
-
-        ImpresoraPDF impresoraPDF = new ImpresoraPDF();
-        ImpresoraTexto impresoraTexto = new ImpresoraTexto();
-
-        // aca creamos los adaptadores
-        Impresora pdfAdapter = new ImpresoraPDFAdapter(impresoraPDF);
-        Impresora textoAdapter = new ImpresoraTextoAdapter(impresoraTexto);
-
-        //creamos el siestema de impresion que usa la interfaz comun
-        SistemaImpresion sistema = new SistemaImpresion();
-
-        System.out.println(" --- Imprimiendo en PDF mediante Adapter ---");
-        sistema.imprimirDocumento(pdfAdapter, "Informe anual - Sección Finanzas");
-
-        System.out.println("--- Imprimiendo en Impresora de Texto mediante Adapter ---");
-        sistema.imprimirDocumento(textoAdapter, "Informe anual - Sección Finanzas");
-
+    public static void imprimirDocumento(Impresora impresora, String contenido) {
+        impresora.imprimir(contenido);
     }
+
+    public static void main(String[] args) {
+        // Usando la impresora PDF directamente
+        Impresora impresoraPDF = new ImpresoraPDF();
+        imprimirDocumento(impresoraPDF, "Contrato en formato PDF");
+
+        // Usando la impresora de texto plano a través del adapter
+        ImpresoraTexto impresoraTexto = new ImpresoraTexto();
+        Impresora impresoraTextoAdaptada = new ImpresoraTextoAdapter(impresoraTexto);
+        imprimirDocumento(impresoraTextoAdaptada, "Informe en texto plano");
+    }
+
 }
